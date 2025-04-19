@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.banner {
+  background: #ffde59;
+  text-align: center;
+  padding: 30px;
+}
+.content-section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  margin-top: 10px;
+}
+button {
+  padding: 8px 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#progress-bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#filled {
+  height: 100%;
+  background: #28a745;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}

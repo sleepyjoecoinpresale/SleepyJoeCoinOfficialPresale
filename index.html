@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sleepy Joe Coin Presale</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Sleepy Joe Coin</div>
+    <nav>
+      <a href="#wallet">Buy</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#transactions">Transactions</a>
+      <a href="#progress">Progress</a>
+      <a href="#community">Telegram</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Sleepy Joe Token Presale</h1>
+    <p>This presale aims to collect <strong>20 BNB</strong> to list the token on <strong>PancakeSwap</strong>.</p>
+  </section>
+
+  <section id="wallet" class="content-section">
+    <h2>Send BNB to Buy Tokens</h2>
+    <p>Send BNB to the following BSC wallet address:</p>
+    <input type="text" id="wallet-address" value="0x8CB085A285c2fD31212aF79704967C9D380A9dC1" readonly />
+    <button onclick="copyWallet()">Copy Wallet Address</button>
+  </section>
+
+  <section id="rewards" class="content-section">
+    <h2>Reward System</h2>
+    <p>Buyers receive <strong>5%</strong> bonus tokens on every purchase.</p>
+    <p>Inviters receive <strong>10%</strong> of the BNB amount their invitees spend.</p>
+  </section>
+
+  <section id="referral" class="content-section">
+    <h2>Your Referral Link</h2>
+    <input type="text" id="referral-link" value="https://sleepyjoe.netlify.app?ref=your_wallet_address" readonly />
+    <button onclick="copyReferral()">Copy Referral Link</button>
+  </section>
+
+  <section id="progress" class="content-section">
+    <h2>Presale Progress</h2>
+    <div id="progress-bar">
+      <div id="filled" style="width: 0%"></div>
+    </div>
+    <p id="progress-text">0% completed</p>
+  </section>
+
+  <section id="transactions" class="content-section">
+    <h2>Transaction History</h2>
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Buyer Wallet</th>
+          <th>Referrer Wallet</th>
+          <th>BNB</th>
+          <th>SPJ Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Transactions will be added here via JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="community" class="content-section">
+    <h2>Join Our Community</h2>
+    <p><a href="https://t.me/Sleepy_joe_coin" target="_blank">Telegram Channel</a></p>
+    <p><a href="https://t.me/Sleepy_JoeCoin" target="_blank">Telegram Chat Group</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sleepy Joe Coin. All rights reserved.</p>
+  </footer>
+</body>
+</html>
