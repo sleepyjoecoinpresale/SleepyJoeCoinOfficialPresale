@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleepy Joe Game</title>
+  <style>
+    body {
+      background-color: #282828;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .game-container {
+      display: grid;
+      grid-template-columns: repeat(5, 100px);
+      grid-gap: 10px;
+      justify-content: center;
+    }
+    .egg {
+      background-color: #f4a261;
+      border-radius: 10px;
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
+    }
+    .egg:hover {
+      background-color: #e76f51;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pick an Egg and Win SPJ!</h1>
+  <div class="game-container">
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+  </div>
+  <script>
+    const prizes = [1000000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000];
+    
+    document.querySelectorAll('.egg').forEach(egg => {
+      egg.addEventListener('click', () => {
+        const prize = prizes[Math.floor(Math.random() * prizes.length)];
+        alert(`You won: ${prize.toLocaleString()} SPJ!`);
+      });
+    });
+  </script>
+</body>
+</html>
