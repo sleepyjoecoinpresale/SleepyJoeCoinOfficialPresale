@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sleepy Joe Game</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#0e0f1b, #1e1f2f);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .eggs {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      gap: 10px;
+    }
+    .egg {
+      width: 60px;
+      height: 80px;
+      background: #fff4a3;
+      border-radius: 50% 50% 45% 45%;
+      border: 3px solid #333;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Pick an Egg</div>
+  <div class="eggs">
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+    <div class="egg"></div>
+  </div>
+  <script>
+    document.querySelectorAll('.egg').forEach(egg => {
+      egg.addEventListener('click', () => {
+        const prizes = [1000000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000];
+        const prize = prizes[Math.floor(Math.random() * prizes.length)];
+        alert("You won: " + prize.toLocaleString() + " SPJ!");
+      });
+    });
+  </script>
+</body>
+</html>
